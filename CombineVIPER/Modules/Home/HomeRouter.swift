@@ -12,7 +12,7 @@ protocol HomeRouterInterface: AnyObject {
 }
 
 enum HomeRoutes {
-    
+    case details(station: Station)
 }
 
 class HomeRouter: NSObject {
@@ -29,15 +29,18 @@ class HomeRouter: NSObject {
         let router = HomeRouter(navigationController: navigationController)
         let presenter = HomePresenter(interactor: interactor, router: router, view: view)
         view.presenter = presenter
-        interactor.output = presenter
-        view.title = "Home"
+        view.title = "Stations"
         return view
     }
 }
 
 extension HomeRouter: HomeRouterInterface {
     func navigate(_ route: HomeRoutes) {
-        
+        switch route {
+        case .details(let station):
+            let detailVC = DetailsRouter.setupModule(station: station)
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
 }
 
