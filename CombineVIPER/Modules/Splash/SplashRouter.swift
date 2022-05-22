@@ -15,7 +15,7 @@ enum SplashRoutes {
     case home
 }
 
-class SplashRouter: NSObject {
+final class SplashRouter: NSObject {
 
     var navigationController: UINavigationController?
 

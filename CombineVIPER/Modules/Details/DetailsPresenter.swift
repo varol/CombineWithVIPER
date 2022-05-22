@@ -18,6 +18,9 @@ protocol DetailsPresenterInterface: AnyObject {
     func setTitle()
     func setAddress()
     func setNumberOfPoints()
+    func navigateButtonTapped()
+    func getLongitude() -> String
+    func getLatitude() -> String
 }
 
 final class DetailsPresenter: DetailsPresenterInterface {
@@ -58,6 +61,18 @@ extension DetailsPresenter {
         if let numberOfPoints = station.numberOfPoints {
             view.setChargingLabel("\(Constants.slotCountTitle) \(numberOfPoints)")
         }
+    }
+
+    func navigateButtonTapped() {
+        view.openGoogleMapsNavigation()
+    }
+
+    func getLongitude() -> String {
+        "\(station.addressInfo?.longitude ?? .zero)"
+    }
+
+    func getLatitude() -> String {
+        "\(station.addressInfo?.latitude ?? .zero)"
     }
 }
 

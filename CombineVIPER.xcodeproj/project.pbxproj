@@ -39,12 +39,9 @@
 		E4D3C6B02836EC01005DAEAB /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A02836EC01005DAEAB /* UIWindow+Extension.swift */; };
 		E4D3C6B12836EC01005DAEAB /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A12836EC01005DAEAB /* UINavigationController+Extensions.swift */; };
 		E4D3C6B22836EC01005DAEAB /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A22836EC01005DAEAB /* Collection+Extensions.swift */; };
-		E4D3C6B42836EC01005DAEAB /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A52836EC01005DAEAB /* Interactorable.swift */; };
-		E4D3C6B52836EC01005DAEAB /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A62836EC01005DAEAB /* Routerable.swift */; };
 		E4D3C6B62836EC01005DAEAB /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A72836EC01005DAEAB /* Viewable.swift */; };
 		E4D3C6B72836EC01005DAEAB /* LoadingShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6A82836EC01005DAEAB /* LoadingShowable.swift */; };
 		E4D3C6B82836EC01005DAEAB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AA2836EC01005DAEAB /* BaseViewController.swift */; };
-		E4D3C6B92836EC01005DAEAB /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AB2836EC01005DAEAB /* BaseCollectionViewCell.swift */; };
 		E4D3C6BA2836EC01005DAEAB /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AC2836EC01005DAEAB /* BaseLabel.swift */; };
 		E4D3C6BB2836EC01005DAEAB /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AD2836EC01005DAEAB /* BaseImageView.swift */; };
 		E4D3C6D22836F03E005DAEAB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6D12836F03E005DAEAB /* Station.swift */; };
@@ -104,12 +101,9 @@
 		E4D3C6A02836EC01005DAEAB /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		E4D3C6A12836EC01005DAEAB /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		E4D3C6A22836EC01005DAEAB /* Collection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
-		E4D3C6A52836EC01005DAEAB /* Interactorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
-		E4D3C6A62836EC01005DAEAB /* Routerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		E4D3C6A72836EC01005DAEAB /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		E4D3C6A82836EC01005DAEAB /* LoadingShowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingShowable.swift; sourceTree = "<group>"; };
 		E4D3C6AA2836EC01005DAEAB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		E4D3C6AB2836EC01005DAEAB /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4D3C6AC2836EC01005DAEAB /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		E4D3C6AD2836EC01005DAEAB /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 		E4D3C6D12836F03E005DAEAB /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
@@ -265,9 +259,9 @@
 		E4D3C6822836EBE1005DAEAB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E4580C50283A4764004F6991 /* Details */,
-				E4D3C6832836EBE1005DAEAB /* Home */,
 				E4D3C6892836EBE1005DAEAB /* Splash */,
+				E4D3C6832836EBE1005DAEAB /* Home */,
+				E4580C50283A4764004F6991 /* Details */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -346,8 +340,6 @@
 		E4D3C6A42836EC01005DAEAB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E4D3C6A52836EC01005DAEAB /* Interactorable.swift */,
-				E4D3C6A62836EC01005DAEAB /* Routerable.swift */,
 				E4D3C6A72836EC01005DAEAB /* Viewable.swift */,
 				E4D3C6A82836EC01005DAEAB /* LoadingShowable.swift */,
 			);
@@ -358,7 +350,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D3C6AA2836EC01005DAEAB /* BaseViewController.swift */,
-				E4D3C6AB2836EC01005DAEAB /* BaseCollectionViewCell.swift */,
 				E4D3C6AC2836EC01005DAEAB /* BaseLabel.swift */,
 				E4D3C6AD2836EC01005DAEAB /* BaseImageView.swift */,
 			);
@@ -515,13 +506,11 @@
 				E4D3C6BA2836EC01005DAEAB /* BaseLabel.swift in Sources */,
 				E4D3C68F2836EBE1005DAEAB /* HomeInteractor.swift in Sources */,
 				E4D3C6522836EB34005DAEAB /* AppDelegate.swift in Sources */,
-				E4D3C6B42836EC01005DAEAB /* Interactorable.swift in Sources */,
 				E4D3C6D22836F03E005DAEAB /* Station.swift in Sources */,
 				E4D3C6B72836EC01005DAEAB /* LoadingShowable.swift in Sources */,
 				E4D3C6542836EB34005DAEAB /* SceneDelegate.swift in Sources */,
 				E4D3C6B82836EC01005DAEAB /* BaseViewController.swift in Sources */,
 				E4D3C6BB2836EC01005DAEAB /* BaseImageView.swift in Sources */,
-				E4D3C6B52836EC01005DAEAB /* Routerable.swift in Sources */,
 				E4580C462839986E004F6991 /* ApiService.swift in Sources */,
 				E4D3C6AE2836EC01005DAEAB /* LoadingView.swift in Sources */,
 				E4D3C6AF2836EC01005DAEAB /* UIViewController+Extensions.swift in Sources */,
@@ -532,7 +521,6 @@
 				E4D3C6942836EBE1005DAEAB /* SplashViewController.swift in Sources */,
 				E4D3C6972836EBE1005DAEAB /* SplashInteractor.swift in Sources */,
 				E4580C62283A47B5004F6991 /* DetailsInteractor.swift in Sources */,
-				E4D3C6B92836EC01005DAEAB /* BaseCollectionViewCell.swift in Sources */,
 				E4D3C6962836EBE1005DAEAB /* SplashRouter.swift in Sources */,
 				E4580C3F283985AB004F6991 /* GetStationsEndpoint.swift in Sources */,
 				E4580C5F283A47B5004F6991 /* DetailsPresenter.swift in Sources */,

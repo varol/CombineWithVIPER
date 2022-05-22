@@ -15,7 +15,7 @@ enum HomeRoutes {
     case details(station: Station)
 }
 
-class HomeRouter: NSObject {
+final class HomeRouter: NSObject {
 
     var navigationController: UINavigationController?
 

@@ -15,7 +15,7 @@ enum DetailsRoutes {
     
 }
 
-class DetailsRouter: NSObject {
+final class DetailsRouter: NSObject {
 
     weak var presenter: DetailsPresenterInterface?
     weak var viewController: DetailsViewController?
