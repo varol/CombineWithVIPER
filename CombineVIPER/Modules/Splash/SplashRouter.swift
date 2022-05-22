@@ -30,7 +30,6 @@ class SplashRouter: NSObject {
         let presenter = SplashPresenter(interactor: interactor, router: router, view: view)
         view.presenter = presenter
         interactor.output = presenter
-        view.title = "Splash"
         return view
     }
 }

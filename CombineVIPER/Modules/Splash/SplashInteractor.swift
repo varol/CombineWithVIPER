@@ -7,18 +7,12 @@
 
 import Foundation
 
-protocol SplashInteractorInterface: AnyObject {
+protocol SplashInteractorInterface: AnyObject {}
 
-}
-
-protocol SplashInteractorOutputInterface: AnyObject {
-
-}
+protocol SplashInteractorOutputInterface: AnyObject {}
 
 final class SplashInteractor {
     var output: SplashInteractorOutputInterface?
 }
 
-extension SplashInteractor: SplashInteractorInterface {
-
-}
+extension SplashInteractor: SplashInteractorInterface {}

@@ -23,7 +23,7 @@ class LoadingView {
         activityIndicator.center = blurView.center
         activityIndicator.hidesWhenStopped = true
         if #available(iOS 13.0, *) {
-            activityIndicator.style = .medium
+            activityIndicator.style = .large
         } else {
             activityIndicator.style = .gray
         }
@@ -32,7 +32,10 @@ class LoadingView {
     }
 
     func startLoading() {
-        UIApplication.shared.windows.first?.addSubview(blurView)
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+        window?.addSubview(blurView)
         blurView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.startAnimating()
     }

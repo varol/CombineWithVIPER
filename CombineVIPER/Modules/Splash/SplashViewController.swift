@@ -7,9 +7,7 @@
 
 import UIKit
 
-protocol SplashViewControllerInterface: AnyObject {
-
-}
+protocol SplashViewControllerInterface: AnyObject {}
 
 final class SplashViewController: BaseViewController {
     var presenter: SplashPresenterInterface!
@@ -19,6 +17,4 @@ final class SplashViewController: BaseViewController {
     }
 }
 
-extension SplashViewController: SplashViewControllerInterface {
-
-}
+extension SplashViewController: SplashViewControllerInterface {}

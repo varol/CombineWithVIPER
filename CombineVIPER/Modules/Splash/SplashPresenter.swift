@@ -33,6 +33,4 @@ final class SplashPresenter: SplashPresenterInterface {
     }
 }
 
-extension SplashPresenter: SplashInteractorOutputInterface {
-
-}
+extension SplashPresenter: SplashInteractorOutputInterface {}

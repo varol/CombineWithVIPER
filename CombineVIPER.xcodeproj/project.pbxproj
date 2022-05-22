@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4580C3F283985AB004F6991 /* GetStationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C3E283985AB004F6991 /* GetStationsEndpoint.swift */; };
+		E4580C4428399733004F6991 /* GetStationsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C4328399733004F6991 /* GetStationsRequestModel.swift */; };
+		E4580C462839986E004F6991 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C452839986E004F6991 /* ApiService.swift */; };
+		E4580C4928399A9E004F6991 /* CoreAPI in Frameworks */ = {isa = PBXBuildFile; productRef = E4580C4828399A9E004F6991 /* CoreAPI */; };
+		E4580C4F283A3DE0004F6991 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C4E283A3DE0004F6991 /* CustomAnnotationView.swift */; };
+		E4580C5F283A47B5004F6991 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C5B283A47B5004F6991 /* DetailsPresenter.swift */; };
+		E4580C60283A47B5004F6991 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C5C283A47B5004F6991 /* DetailsRouter.swift */; };
+		E4580C62283A47B5004F6991 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C5E283A47B5004F6991 /* DetailsInteractor.swift */; };
+		E4580C65283A5020004F6991 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C63283A5020004F6991 /* DetailsViewController.swift */; };
+		E4580C66283A5020004F6991 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4580C64283A5020004F6991 /* DetailsViewController.xib */; };
 		E4D3C6522836EB34005DAEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6512836EB34005DAEAB /* AppDelegate.swift */; };
 		E4D3C6542836EB34005DAEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6532836EB34005DAEAB /* SceneDelegate.swift */; };
 		E4D3C65B2836EB36005DAEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D3C65A2836EB36005DAEAB /* Assets.xcassets */; };
@@ -37,6 +47,7 @@
 		E4D3C6B92836EC01005DAEAB /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AB2836EC01005DAEAB /* BaseCollectionViewCell.swift */; };
 		E4D3C6BA2836EC01005DAEAB /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AC2836EC01005DAEAB /* BaseLabel.swift */; };
 		E4D3C6BB2836EC01005DAEAB /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6AD2836EC01005DAEAB /* BaseImageView.swift */; };
+		E4D3C6D22836F03E005DAEAB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6D12836F03E005DAEAB /* Station.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4580C3E283985AB004F6991 /* GetStationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationsEndpoint.swift; sourceTree = "<group>"; };
+		E4580C4128399682004F6991 /* CoreAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreAPI; sourceTree = "<group>"; };
+		E4580C4328399733004F6991 /* GetStationsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationsRequestModel.swift; sourceTree = "<group>"; };
+		E4580C452839986E004F6991 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E4580C4E283A3DE0004F6991 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		E4580C5B283A47B5004F6991 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		E4580C5C283A47B5004F6991 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		E4580C5E283A47B5004F6991 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		E4580C63283A5020004F6991 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E4580C64283A5020004F6991 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		E4D3C64E2836EB34005DAEAB /* CombineVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D3C6512836EB34005DAEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D3C6532836EB34005DAEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +112,7 @@
 		E4D3C6AB2836EC01005DAEAB /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4D3C6AC2836EC01005DAEAB /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		E4D3C6AD2836EC01005DAEAB /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
+		E4D3C6D12836F03E005DAEAB /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4580C4928399A9E004F6991 /* CoreAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,13 +141,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4580C3D28398597004F6991 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C3E283985AB004F6991 /* GetStationsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		E4580C4028399682004F6991 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C4128399682004F6991 /* CoreAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E4580C4228399724004F6991 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C4328399733004F6991 /* GetStationsRequestModel.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		E4580C4728399A9E004F6991 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4580C4D283A3DC6004F6991 /* AnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C4E283A3DE0004F6991 /* CustomAnnotationView.swift */,
+			);
+			path = AnnotationView;
+			sourceTree = "<group>";
+		};
+		E4580C50283A4764004F6991 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C5B283A47B5004F6991 /* DetailsPresenter.swift */,
+				E4580C5C283A47B5004F6991 /* DetailsRouter.swift */,
+				E4580C5E283A47B5004F6991 /* DetailsInteractor.swift */,
+				E4580C63283A5020004F6991 /* DetailsViewController.swift */,
+				E4580C64283A5020004F6991 /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E4580C67283A6315004F6991 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				E4D3C6D12836F03E005DAEAB /* Station.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
 		E4D3C6452836EB34005DAEAB = {
 			isa = PBXGroup;
 			children = (
+				E4580C4028399682004F6991 /* Packages */,
 				E4D3C6502836EB34005DAEAB /* CombineVIPER */,
 				E4D3C6672836EB36005DAEAB /* CombineVIPERTests */,
 				E4D3C6712836EB36005DAEAB /* CombineVIPERUITests */,
 				E4D3C64F2836EB34005DAEAB /* Products */,
+				E4580C4728399A9E004F6991 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +225,7 @@
 		E4D3C6502836EB34005DAEAB /* CombineVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				E4D3C6BC2836ECE0005DAEAB /* Network */,
 				E4D3C6992836EC01005DAEAB /* Resources */,
 				E4D3C6822836EBE1005DAEAB /* Modules */,
 				E4D3C6812836EB86005DAEAB /* App */,
@@ -180,6 +265,7 @@
 		E4D3C6822836EBE1005DAEAB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E4580C50283A4764004F6991 /* Details */,
 				E4D3C6832836EBE1005DAEAB /* Home */,
 				E4D3C6892836EBE1005DAEAB /* Splash */,
 			);
@@ -232,6 +318,7 @@
 		E4D3C69B2836EC01005DAEAB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E4580C4D283A3DC6004F6991 /* AnnotationView */,
 				E4D3C69C2836EC01005DAEAB /* LoadingView */,
 			);
 			path = Views;
@@ -278,6 +365,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		E4D3C6BC2836ECE0005DAEAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C67283A6315004F6991 /* ResponseModels */,
+				E4580C4228399724004F6991 /* RequestModels */,
+				E4580C3D28398597004F6991 /* Endpoints */,
+				E4580C452839986E004F6991 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +392,9 @@
 			dependencies = (
 			);
 			name = CombineVIPER;
+			packageProductDependencies = (
+				E4580C4828399A9E004F6991 /* CoreAPI */,
+			);
 			productName = CombineVIPER;
 			productReference = E4D3C64E2836EB34005DAEAB /* CombineVIPER.app */;
 			productType = "com.apple.product-type.application";
@@ -384,6 +485,7 @@
 			files = (
 				E4D3C65E2836EB36005DAEAB /* LaunchScreen.storyboard in Resources */,
 				E4D3C65B2836EB36005DAEAB /* Assets.xcassets in Resources */,
+				E4580C66283A5020004F6991 /* DetailsViewController.xib in Resources */,
 				E4D3C6902836EBE1005DAEAB /* HomeViewController.xib in Resources */,
 				E4D3C6982836EBE1005DAEAB /* SplashViewController.xib in Resources */,
 			);
@@ -414,25 +516,34 @@
 				E4D3C68F2836EBE1005DAEAB /* HomeInteractor.swift in Sources */,
 				E4D3C6522836EB34005DAEAB /* AppDelegate.swift in Sources */,
 				E4D3C6B42836EC01005DAEAB /* Interactorable.swift in Sources */,
+				E4D3C6D22836F03E005DAEAB /* Station.swift in Sources */,
 				E4D3C6B72836EC01005DAEAB /* LoadingShowable.swift in Sources */,
 				E4D3C6542836EB34005DAEAB /* SceneDelegate.swift in Sources */,
 				E4D3C6B82836EC01005DAEAB /* BaseViewController.swift in Sources */,
 				E4D3C6BB2836EC01005DAEAB /* BaseImageView.swift in Sources */,
 				E4D3C6B52836EC01005DAEAB /* Routerable.swift in Sources */,
+				E4580C462839986E004F6991 /* ApiService.swift in Sources */,
 				E4D3C6AE2836EC01005DAEAB /* LoadingView.swift in Sources */,
 				E4D3C6AF2836EC01005DAEAB /* UIViewController+Extensions.swift in Sources */,
+				E4580C60283A47B5004F6991 /* DetailsRouter.swift in Sources */,
 				E4D3C6952836EBE1005DAEAB /* SplashPresenter.swift in Sources */,
 				E4D3C6932836EBE1005DAEAB /* HomePresenter.swift in Sources */,
 				E4D3C6912836EBE1005DAEAB /* HomeViewController.swift in Sources */,
 				E4D3C6942836EBE1005DAEAB /* SplashViewController.swift in Sources */,
 				E4D3C6972836EBE1005DAEAB /* SplashInteractor.swift in Sources */,
+				E4580C62283A47B5004F6991 /* DetailsInteractor.swift in Sources */,
 				E4D3C6B92836EC01005DAEAB /* BaseCollectionViewCell.swift in Sources */,
 				E4D3C6962836EBE1005DAEAB /* SplashRouter.swift in Sources */,
+				E4580C3F283985AB004F6991 /* GetStationsEndpoint.swift in Sources */,
+				E4580C5F283A47B5004F6991 /* DetailsPresenter.swift in Sources */,
 				E4D3C6922836EBE1005DAEAB /* HomeRouter.swift in Sources */,
 				E4D3C6B02836EC01005DAEAB /* UIWindow+Extension.swift in Sources */,
 				E4D3C6B62836EC01005DAEAB /* Viewable.swift in Sources */,
+				E4580C65283A5020004F6991 /* DetailsViewController.swift in Sources */,
 				E4D3C6B12836EC01005DAEAB /* UINavigationController+Extensions.swift in Sources */,
 				E4D3C6B22836EC01005DAEAB /* Collection+Extensions.swift in Sources */,
+				E4580C4F283A3DE0004F6991 /* CustomAnnotationView.swift in Sources */,
+				E4580C4428399733004F6991 /* GetStationsRequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +875,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4580C4828399A9E004F6991 /* CoreAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4D3C6462836EB34005DAEAB /* Project object */;
 }
