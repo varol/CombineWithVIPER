@@ -22,6 +22,10 @@
 		E4580C6E283A6C79004F6991 /* MockHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C6D283A6C79004F6991 /* MockHomeInteractor.swift */; };
 		E4580C70283A6CBC004F6991 /* MockHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C6F283A6CBC004F6991 /* MockHomeRouter.swift */; };
 		E4580C72283A6D8C004F6991 /* StationsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E4580C71283A6D8C004F6991 /* StationsResponse.json */; };
+		E4580C78283A7DEB004F6991 /* DetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C77283A7DEB004F6991 /* DetailsPresenterTests.swift */; };
+		E4580C7A283A7DFB004F6991 /* MockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C79283A7DFB004F6991 /* MockDetailsViewController.swift */; };
+		E4580C7C283A7E06004F6991 /* MockDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C7B283A7E06004F6991 /* MockDetailsInteractor.swift */; };
+		E4580C7E283A7E10004F6991 /* MockDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4580C7D283A7E10004F6991 /* MockDetailsRouter.swift */; };
 		E4D3C6522836EB34005DAEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6512836EB34005DAEAB /* AppDelegate.swift */; };
 		E4D3C6542836EB34005DAEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C6532836EB34005DAEAB /* SceneDelegate.swift */; };
 		E4D3C65B2836EB36005DAEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D3C65A2836EB36005DAEAB /* Assets.xcassets */; };
@@ -85,6 +89,10 @@
 		E4580C6D283A6C79004F6991 /* MockHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeInteractor.swift; sourceTree = "<group>"; };
 		E4580C6F283A6CBC004F6991 /* MockHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRouter.swift; sourceTree = "<group>"; };
 		E4580C71283A6D8C004F6991 /* StationsResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StationsResponse.json; sourceTree = "<group>"; };
+		E4580C77283A7DEB004F6991 /* DetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterTests.swift; sourceTree = "<group>"; };
+		E4580C79283A7DFB004F6991 /* MockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDetailsViewController.swift; sourceTree = "<group>"; };
+		E4580C7B283A7E06004F6991 /* MockDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDetailsInteractor.swift; sourceTree = "<group>"; };
+		E4580C7D283A7E10004F6991 /* MockDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDetailsRouter.swift; sourceTree = "<group>"; };
 		E4D3C64E2836EB34005DAEAB /* CombineVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D3C6512836EB34005DAEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D3C6532836EB34005DAEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +224,17 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		E4580C76283A7DD0004F6991 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E4580C77283A7DEB004F6991 /* DetailsPresenterTests.swift */,
+				E4580C79283A7DFB004F6991 /* MockDetailsViewController.swift */,
+				E4580C7B283A7E06004F6991 /* MockDetailsInteractor.swift */,
+				E4580C7D283A7E10004F6991 /* MockDetailsRouter.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		E4D3C6452836EB34005DAEAB = {
 			isa = PBXGroup;
 			children = (
@@ -241,10 +260,10 @@
 		E4D3C6502836EB34005DAEAB /* CombineVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				E4D3C6812836EB86005DAEAB /* App */,
 				E4D3C6BC2836ECE0005DAEAB /* Network */,
 				E4D3C6992836EC01005DAEAB /* Resources */,
 				E4D3C6822836EBE1005DAEAB /* Modules */,
-				E4D3C6812836EB86005DAEAB /* App */,
 				E4D3C65A2836EB36005DAEAB /* Assets.xcassets */,
 				E4D3C65C2836EB36005DAEAB /* LaunchScreen.storyboard */,
 				E4D3C65F2836EB36005DAEAB /* Info.plist */,
@@ -255,6 +274,7 @@
 		E4D3C6672836EB36005DAEAB /* CombineVIPERTests */ = {
 			isa = PBXGroup;
 			children = (
+				E4580C76283A7DD0004F6991 /* Details */,
 				E4580C68283A6B9F004F6991 /* Home */,
 				E4D3C6682836EB36005DAEAB /* CombineVIPERTests.swift */,
 			);
@@ -564,10 +584,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4580C6C283A6C09004F6991 /* MockHomeViewController.swift in Sources */,
+				E4580C7C283A7E06004F6991 /* MockDetailsInteractor.swift in Sources */,
 				E4580C6E283A6C79004F6991 /* MockHomeInteractor.swift in Sources */,
 				E4580C70283A6CBC004F6991 /* MockHomeRouter.swift in Sources */,
 				E4D3C6692836EB36005DAEAB /* CombineVIPERTests.swift in Sources */,
+				E4580C7A283A7DFB004F6991 /* MockDetailsViewController.swift in Sources */,
+				E4580C7E283A7E10004F6991 /* MockDetailsRouter.swift in Sources */,
 				E4580C6A283A6BD4004F6991 /* HomePresenterTests.swift in Sources */,
+				E4580C78283A7DEB004F6991 /* DetailsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
