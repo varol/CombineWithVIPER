@@ -18,6 +18,7 @@ protocol HomeViewControllerInterface: AnyObject {
     func getMapViewLongitude() -> Double
     func getMapViewLatitude() -> Double
     func tapticFeedback()
+    func didSelectStation(_ station: Station)
 }
 
 final class HomeViewController: BaseViewController {
@@ -88,9 +89,13 @@ extension HomeViewController: HomeViewControllerInterface {
 }
 
 extension HomeViewController: MKMapViewDelegate {
+    func didSelectStation(_ station: Station) {
+        presenter.input?.didSelectStationTrigger.send(station)
+    }
+
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotationView = view.annotation as? CustomAnnotationView else { return }
         guard let station = annotationView.station else { return }
-        presenter.input?.didSelectStationTrigger.send(station)
+        didSelectStation(station)
     }
 }

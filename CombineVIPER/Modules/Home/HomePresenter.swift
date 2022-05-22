@@ -25,6 +25,7 @@ protocol HomePresenterInterface: AnyObject {
     func viewDidDisappear()
     func startTimer(timerInterval: Double)
     func timerInvalidate()
+    func getTimerInterval() -> Double?
 
     var input: HomePresenterInput? { get }
     var output: HomePresenterOutput? { get }
@@ -98,6 +99,10 @@ final class HomePresenter: HomePresenterInterface, HomePresenterInput, HomePrese
 
     func timerInvalidate() {
         timer?.invalidate()
+    }
+
+    func getTimerInterval() -> Double? {
+        timer?.timeInterval
     }
 }
 
